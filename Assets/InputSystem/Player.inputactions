@@ -1,0 +1,90 @@
+{
+    "name": "Player",
+    "maps": [
+        {
+            "name": "Movement",
+            "id": "8ee933a7-99c7-45f7-a599-ea5e3392b177",
+            "actions": [
+                {
+                    "name": "New action",
+                    "type": "Value",
+                    "id": "15c932ed-ea5f-4e2a-808d-e9fb3b4745d3",
+                    "expectedControlType": "Vector2",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": true
+                }
+            ],
+            "bindings": [
+                {
+                    "name": "2D Vector",
+                    "id": "042e8101-727c-44bf-83fa-25c13601bb9c",
+                    "path": "2DVector",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "New action",
+                    "isComposite": true,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "up",
+                    "id": "4e6c10d4-bfa6-4b15-8bfd-71980ae7a73a",
+                    "path": "",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "DualSense",
+                    "action": "New action",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                },
+                {
+                    "name": "down",
+                    "id": "4a94ce8d-e619-4767-bc42-8a03a0c92b7e",
+                    "path": "",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "DualSense",
+                    "action": "New action",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                },
+                {
+                    "name": "left",
+                    "id": "79d59661-7bcb-45c5-8d1f-953d7e246048",
+                    "path": "",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "DualSense",
+                    "action": "New action",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                },
+                {
+                    "name": "right",
+                    "id": "d0e6f1be-8681-412a-8c8c-c61200e2b2d9",
+                    "path": "",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "DualSense",
+                    "action": "New action",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                }
+            ]
+        }
+    ],
+    "controlSchemes": [
+        {
+            "name": "DualSense",
+            "bindingGroup": "DualSense",
+            "devices": [
+                {
+                    "devicePath": "<DualSenseGamepadHID>",
+                    "isOptional": false,
+                    "isOR": false
+                }
+            ]
+        }
+    ]
+}
