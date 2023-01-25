@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.InputSystem.DualShock;
 
 public class Emitter : MonoBehaviour
 {
@@ -11,8 +12,4 @@ public class Emitter : MonoBehaviour
         source.Play();
     }
 
-    private void OnCollisionEnter(Collision collision)
-    {
-        source.Play();
-    }
 }
