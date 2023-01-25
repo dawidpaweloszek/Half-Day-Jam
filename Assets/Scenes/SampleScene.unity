@@ -475,7 +475,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   idleColor: {r: 0.07058824, g: 1, b: 0, a: 0}
-  speed: 0
+  speed: 10
+  playerInput: {fileID: 1093955227}
 --- !u!114 &1093955227
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -584,7 +585,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8055605899148981015, guid: fa7190a473186c54b81dda54049dab77, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 29.50394
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8055605899148981015, guid: fa7190a473186c54b81dda54049dab77, type: 3}
       propertyPath: m_LocalPosition.z

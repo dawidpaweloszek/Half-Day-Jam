@@ -7,21 +7,26 @@ using UnityEngine.InputSystem.DualShock;
 public class BasicSubmarine : MonoBehaviour
 {
     public Color idleColor;
-    public Player input;
     public float speed;
+    public PlayerInput playerInput;
+    public PlayerInputAction inputAction;
 
     private void Awake()
     {
         var gamepad = (DualShockGamepad)Gamepad.all[0];
         gamepad.SetLightBarColor(idleColor);
 
-        input = GetComponent<Player>();
+        playerInput = GetComponent<PlayerInput>();
+        inputAction = new PlayerInputAction();
+
+        inputAction.Movement.Enable();
     }
 
     private void FixedUpdate()
     {
-        //Vector2 inputVector = input.Movement.Up&Down.ReadValue<Vector2>();
-        //transform.position += new Vector3(inputVector.x, 0, inputVector.y) * Time.deltaTime * speed;
+        Vector2 inputVector = inputAction.Movement.Movement.ReadValue<Vector2>();
+        //Debug.Log(inputVector);
+        transform.position += new Vector3(inputVector.x, 0, inputVector.y) * Time.deltaTime * speed;
     }
 
     //// Update is called once per frame
